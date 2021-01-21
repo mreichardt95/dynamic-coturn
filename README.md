@@ -17,7 +17,7 @@ docker run -d --network=host \
     -v ${DOCKER_VOLUME_WITH_TURN_CONF}:/var/run/coturn/
     -e TURN_CONFIG=/var/run/coturn/coturn.conf
     -e CHECK_INTERVAL="500"
-    mreichardt95/dynamic-coturn
+    dexxter1911/dynamic-coturn
 ```
 `--network=host` is  highly recommended as turn a lot of ports forwarded and docker does not handle that very well.
 ### Environment Variables
